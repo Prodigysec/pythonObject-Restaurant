@@ -1,3 +1,4 @@
+import Review
 
 class  Customer:
     instances = []
@@ -19,3 +20,8 @@ class  Customer:
     
     def all(self):
         return Customer.instances
+    
+    def restaurants(self):
+        return list({review.restaurant() for review in self.reviews})
+    
+    
