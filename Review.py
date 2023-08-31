@@ -13,3 +13,9 @@ class Review:
     
     def all(self):
         return Review.reviews
+    
+    def customer(self):
+        return self.customer
+    
+    def restaurant(self):
+        return self.restaurant
