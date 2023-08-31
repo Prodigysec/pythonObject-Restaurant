@@ -9,3 +9,8 @@ class Restaurant:
     def name(self):
         return self.name
     
+    def reviews(self):
+        return self.reviews
+    
+    def customers(self):
+        return list({review.customer() for review in self.reviews})
